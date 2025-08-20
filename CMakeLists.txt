@@ -163,7 +163,7 @@ if(WIN32)
     )
     if(LIBUSB_WINDOWS_HOTPLUG)
         target_sources(usb-1.0 PRIVATE
-            "${LIBUSB_ROOT}/os/windows/windows_hotplug.h"
+            "${LIBUSB_ROOT}/os/windows_hotplug.h"
             "${LIBUSB_ROOT}/os/windows_hotplug.c"
         )
     endif()
