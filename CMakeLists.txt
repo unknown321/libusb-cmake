@@ -166,6 +166,7 @@ if(WIN32)
             "${LIBUSB_ROOT}/os/windows_hotplug.h"
             "${LIBUSB_ROOT}/os/windows_hotplug.c"
         )
+        add_definitions(-DLIBUSB_WINDOWS_HOTPLUG)
     endif()
     target_compile_definitions(usb-1.0 PRIVATE $<$<C_COMPILER_ID:MSVC>:_CRT_SECURE_NO_WARNINGS=1>)
     target_link_libraries(usb-1.0 PRIVATE windowsapp)
